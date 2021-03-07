@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.numberContainer, .sizeContainer{
+    width: 40%;
+    text-align: center;
+    border: 2px teal solid;
+    margin: 5%;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.blankNumber, .blankSize{
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    border: 2px teal solid;
+    color: darkorchid;;
+}
+
+.highlight{
+    background-color: teal;
+    color: white;
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    border: 2px teal solid;
+}
+
+button{
+    padding: 10px;
+    color: white;
+    background-color: teal;
+    font-weight: bold;
+}
+
+button:hover{
+    border-width: 5px;
+}
