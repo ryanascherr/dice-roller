@@ -51,8 +51,15 @@ generate.addEventListener("click", function() {
     console.log(window.result);
 
     var alert = document.querySelector(".alert");
-    var alertText = "You rolled " + window.result + "!";
-    alert.innerHTML = alertText;
+
+    if (window.numberOfDice == 0 || window.sizeOfDice == 0) {
+        var mistakeAlertText = "You must choose dice number and dice size. Please try again.";
+        alert.innerHTML = mistakeAlertText;
+        return;
+    } else {
+        var alertText = "You rolled " + window.result + "!";
+        alert.innerHTML = alertText;
+    }
 
     window.result = 0;
 });

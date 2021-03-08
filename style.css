@@ -4,11 +4,31 @@
     box-sizing: border-box;
 }
 
-h1{
-    text-align: center;
+body{
+    background-color: #EBF5FB;
+    font-family: ;
 }
 
-main{
+header{
+    text-align: center;
+    padding: 5% 0 0 0;
+}
+
+h1{
+    font-size: 300%;
+    color: #2874A6;
+}
+
+h2{
+    font-size: 200%;
+    margin: 1% 0;
+}
+
+h3{
+    font-size: 150%;
+}
+
+.mainContainer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -20,6 +40,8 @@ main{
     text-align: center;
     border: 2px teal solid;
     margin: 5%;
+    padding: 1%;
+    background-color: #D6EAF8;
 }
 
 .content{
@@ -33,7 +55,9 @@ main{
     padding: 10px;
     margin: 10px;
     border: 2px teal solid;
-    color: darkorchid;;
+    color: darkorchid;
+    cursor: pointer;
+    background-color: white;
 }
 
 .highlight{
@@ -42,16 +66,47 @@ main{
     width: 20%;
     padding: 10px;
     margin: 10px;
-    border: 2px teal solid;
+    border: 2px white solid;
 }
 
 button{
     padding: 10px;
-    color: white;
-    background-color: teal;
+    color: teal;
+    background-color: white;
+    font-size: 200%;
     font-weight: bold;
+    margin-bottom: 30px;
+    border-width: 3px;
+    cursor: pointer;
 }
 
 button:hover{
     border-width: 5px;
+    color: white;
+    background-color: teal;
 }
+
+.alert{
+    font-family: monospace;
+    font-size: 40px;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
+}
+
+@media screen and (max-width: 992px) {
+
+    .mainContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .numberContainer, .sizeContainer{
+        width: 50%;
+    }
+  }
