@@ -22,10 +22,12 @@ h1{
 h2{
     font-size: 200%;
     margin: 1% 0;
+    color: #2874A6;
 }
 
 h3{
     font-size: 150%;
+    color: #2874A6;
 }
 
 .mainContainer{
@@ -60,6 +62,11 @@ h3{
     background-color: white;
 }
 
+.blankNumber:hover, .blankSize:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 2.5px grey;
+}
+
 .highlight{
     background-color: teal;
     color: white;
@@ -67,6 +74,8 @@ h3{
     padding: 10px;
     margin: 10px;
     border: 2px white solid;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 2.5px grey;
 }
 
 button{
@@ -89,6 +98,7 @@ button:hover{
 .alert{
     font-family: monospace;
     font-size: 40px;
+    color: #2874A6;
 }
 
 .flex-column{
