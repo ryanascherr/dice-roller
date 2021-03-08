@@ -99,6 +99,8 @@ button:hover{
     font-family: monospace;
     font-size: 40px;
     color: #2874A6;
+    margin-bottom: 1%;
+    text-align: center;
 }
 
 .flex-column{
@@ -117,6 +119,14 @@ button:hover{
     }
 
     .numberContainer, .sizeContainer{
-        width: 50%;
+        width: 90%;
+    }
+
+    .blankNumber, .blankSize{
+        width: 33.33%;
+    }
+
+    .highlight{
+        width: 33.33%;
     }
   }
